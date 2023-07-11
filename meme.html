@@ -4,9 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Meme Movement</title>
+<!-- audio tag with loop and autoplay attributes, autoplay isn't working for some reason-->
+<audio controls loop autoplay>
+    <!--pointing to the mps in the root web folder-->
+    <source src="drake.mp3" >
+</audio>
 <style>
     #meme {
-        position: absolute;
+        position: fixed;
     }
 </style>
 </head>
@@ -15,11 +20,11 @@
 <h1>Meme Movement</h1>
         <button id="start-button">Start</button>
 <button id="stop-button">Stop</button>
-
+<!--pointing to meme in the root web folder-->
 <img src="elon2.jpeg" id="meme" width="280px" height="280px"/>
 
 
-
+<!--points to script for meme to move-->
 <script src="meme.js"></script>
 
 </body>
